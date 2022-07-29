@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!--CSS LINK-->
+    <link rel="stylesheet" href="css/game.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=bangers&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="gameTitle">
+        <div class="column1">
+            <h1 style="text-align: center;">Game</h1>
+        </div>
+    </div>
+
+
+<!------------------------game part--------------------------->
+    <div class="row">
+
+
+        <div class="column">
+            <canvas id="game"></canvas>
+          <div id="p1">
+            <img src="img/player1.jpg" alt="" width="100px" height="180px">
+            <div id="p1banner23">
+                <div id="p1FireScore"></div>
+              </div>
+              <h2 class="p1">PLAYER 1</h2>
+          </div>
+        </div>
+
+
+        <div class="column">
+            <div id="p2">
+                <img src="img/player2.jpg" alt="" width="100px" height="180px">
+                <div id="p2banner24">
+                    <div id="p2FireScore"></div>
+                  </div>
+              <h2 class="p2">PLAYER 2</h2>
+              </div>
+        </div>
+
+
+      </div>
+<!------------------Button Part--------------------------->
+      <div class="row2">
+        <div class="column2">
+            <button id="ShootBtn" onclick="shootBtn()">Shoot</button>
+        </div>
+        <div class="column2">
+            <button id="resetBtn" onclick="resetBtn()">RESET </button>
+        </div>
+    </div>
+
+
+<!-----------------SCORE BOARD---------------->
+    <div id="Score-Board">
+
+
+        <div class="row3" >
+            <div class="grid-item" id="grid-item-1">PLAYER 1</div>
+            <div class="grid-item" id="grid-item-4">0</div>
+        </div>
+
+
+        <div class="row3">
+            <div class="grid-item" id="grid-item-5">PLAYER 2</div>
+            <div class="grid-item" id="grid-item-8">0</div>
+        </div>
+
+
+    </div>
+
+    <div class="result">
+        <div class="result-item" id="grid-item-9"></div>
+    </div>
+
+
+
+    <script src="js/game.js"></script>
+</body>
+</html>
